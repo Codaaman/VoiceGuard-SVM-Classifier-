@@ -30,12 +30,12 @@ while True:
     mfccs = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=30)
     scaled_mfccs = np.mean(mfccs.T, axis=0).reshape(1,-1)  
 
-
-    model=joblib.load('D:\\spotyfy_python\\Anvesha_model.pkl')
+    # here enter your directory path
+    model=joblib.load('') 
    
-    scaler=joblib.load('D:\\spotyfy_python\\Anvesh_scaler.pkl')
+    scaler=joblib.load('')
     
-    encoder=joblib.load('D:\\spotyfy_python\\Anvesha_encoder.pkl')
+    encoder=joblib.load('')
     
     scaled_featurs=scaler.transform(scaled_mfccs)
 
