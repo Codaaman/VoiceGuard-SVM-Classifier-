@@ -12,8 +12,11 @@ lable=[]
 
 
 
-path='D:\\spotyfy_python\\audio_aynaliss\\dataset'
-labels=['Aman','Music']
+#path='D:\\spotyfy_python\\audio_aynaliss\\dataset'
+#labels=['Aman','Music']
+
+path='path/your file'
+labels=['Your_name','Music']
 
 
 for lab in labels:
